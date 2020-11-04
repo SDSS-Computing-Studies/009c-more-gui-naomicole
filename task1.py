@@ -26,7 +26,7 @@ def clickFunction():
         A = math.sqrt(s(s-a)(s-b)(s-c))
 
         f_entry.delete(0,END)
-        f_entry.insert(0,answer)
+        f_entry.insert(0,A)
 
     elif h == "" and b == "" and a != "" and c != "":
         
@@ -35,12 +35,12 @@ def clickFunction():
         A = b*h/2
 
         f_entry.delete(0,END)
-        f_entry.insert(0,answer)
+        f_entry.insert(0,A)
 
     else:
-        A = print("the area cannot be calculated\nfrom the information given")
+        A = "the area cannot be calculated\nfrom the information given"
         f_entry.delete(0,END)
-        f_entry.insert(0,answer)
+        f_entry.insert(0,A)
 
 triangle = PhotoImage(file="triangle.png")
 l1 = Label(win,image=triangle)
